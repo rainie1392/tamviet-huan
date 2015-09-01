@@ -1,0 +1,225 @@
+/*BEGIN-CSS:LAYOUT
+==================================================================================================================*/
+.header {background: none repeat scroll 0 0 #f1f1f1;height: auto;box-shadow: 0 3px 5px #bbb;}
+.left_slideshow_col2{float:left;width:230px;}
+.left_slideshow_col3{float:left;width:190px;}
+
+.slideshow_left_col2 {float:left;width: 750px;}
+.slideshow_right_col2 {float:right;width: 750px;}
+.slideshow_col3{float:right;width:190px;}
+.slideshow{width:990px;}
+
+.right_slideshow_col2{float:right;width:230px;}
+.right_slideshow_col3{float:right;width:190px;}
+
+
+/*END-CSS:LAYOUT
+==================================================================================================================*/
+
+
+/*BEGIN-CSS:COMMON
+==================================================================================================================*/
+
+/*END-CSS:COMMON
+==================================================================================================================*/
+
+
+/*BEGIN-CSS:BUTTON
+==================================================================================================================*/
+
+/*END-CSS:BUTTON
+==================================================================================================================*/
+
+
+/*BEGIN-CSS:TOPLINK
+==================================================================================================================*/
+.top-link { background-color: #2c81d9;height: 26px;}
+.topmenu { float: right;height: 26px;margin-right: 10px; padding: 0;}
+.topmenu li { float: left; line-height: 26px; list-style: outside none none;margin: 0;padding: 0 0 0 18px;position: relative;}
+.topmenu li a, .topmenu li div {
+    color: #ffffff;
+    display: block;
+    padding: 0 8px 0 14px;
+    text-decoration: none;
+}
+.topmenu li.languageFlag a {
+    padding: 7px 3px;
+}
+.topmenu ul li.Hotline a {
+    background: url("Images01/hotline.png") no-repeat scroll left 5px rgba(0, 0, 0, 0);
+    padding-left: 18px;
+}
+.topmenu ul li.test-cart a {
+    background: url("Images01/iconmonstr-check-mark-11-icon.png") no-repeat scroll left 5px rgba(0, 0, 0, 0);
+    padding-left: 18px;
+}
+.topmenu ul li.topMenu_Login a {
+    background: url("Images01/sign_up.png") no-repeat scroll left 4px rgba(0, 0, 0, 0);
+    padding-left: 19px;
+}
+.topmenu ul li.topMenu_Register a {
+    background: url("Images01/Login_in.png") no-repeat scroll left 5px rgba(0, 0, 0, 0);
+    padding-left: 18px;
+}
+.topmenu ul li.topMenu_cart a {
+    background: url("Images01/Stack.png") no-repeat scroll left 4px rgba(0, 0, 0, 0);
+    padding-left: 20px;
+}
+.topmenu ul li ul {
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    display: none;
+    margin-top: 24px;
+    padding: 4px;
+    position: absolute;
+    width: 171px;
+    z-index: 1;
+}
+.topmenu ul li ul li {
+    background-image: none;
+    position: relative;
+}
+.topmenu ul li:hover ul {
+    display: block;
+}
+.topmenu ul li ul li a {
+    color: #565656;
+    display: block;
+}
+.topmenu ul li ul li.user a {
+    background: url("Images01/ico_ucp.1.0.2.png") no-repeat scroll left -169px rgba(0, 0, 0, 0);
+    border-bottom: 1px solid #e7e7e7;
+    padding-left: 30px;
+}
+.topmenu ul li ul li.order a {
+    background: url("Images01/ico_ucp.1.0.2.png") no-repeat scroll left -201px rgba(0, 0, 0, 0);
+    border-bottom: 1px solid #e7e7e7;
+    padding-left: 30px;
+}
+.topmenu ul li ul li.escape a {
+    background: url("Images01/ico_ucp.1.0.2.png") no-repeat scroll left -301px rgba(0, 0, 0, 0);
+    padding-left: 30px;
+}
+.topmenu ul li ul li a:hover {
+    color: #c27d42;
+}
+/*END-CSS:TOPLINK
+==================================================================================================================*/
+
+
+/*BEGIN-CSS:MENU NAVIGATION
+==================================================================================================================*/
+#SearchForm {
+    background-color: #2C81D9;
+    float: right;
+    height: 23px;
+    margin-right: 13px;
+    margin-top: 6px;
+    padding-top: 3px;
+    width: 204px;
+}
+#SearchForm .search-input {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #fff;
+    border-color: #255B92;
+    border-image: none;
+    border-style: solid none solid solid;
+    border-width: 1px medium 1px 1px;
+    float: left;
+    height: 19px;
+    margin: 0 0 0 3px;
+    padding: 0 3px 0 3px;
+    width: 160px;
+}
+#SearchForm .search-button {
+    background: url("Images01/search.gif") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    cursor: pointer;
+    float: left;
+    height: 19px;
+    margin: 2px 10px 0 -19px;
+    padding: 0;
+    vertical-align: middle;
+    width: 19px;
+}
+#SearchForm .search-adv {
+    background: url("Images01/search_adv.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 21px;
+    margin-left: 5px;
+    margin-top: -1px;
+    width: 20px;
+}
+#SearchForm a {
+    color: #ffffff;
+    font-size: 12px;
+}
+#SearchForm .search-adv span {
+    display: none;
+}
+.navigation-menu {background: #2c81d9;border: 1px solid #2c81d9;border-radius: 0 0 5px 5px;clear: both;height: 38px;margin: 0 6px;padding: 1px;width: 985px;}
+.navigation-menu ul.menu > li {position: relative;float: left;width : 123px;}
+.navigation-menu ul.menu > li > a {color: #a7c6dd;font-weight: bold;border-right: 1px solid #156AC3;color: #fff;padding: 0px 20px;display: block;text-shadow: 0 1px 0 #5d370d;white-space: nowrap;line-height: 38px;}
+.navigation-menu ul.menu > li.level0.current > a,.navigation-menu .menu > li > a:hover {color: #FFE62D;}
+.navigation-menu ul.menu ul.level1 {position: absolute;display: none;background: #2c81d9;left: 0;width: 210px;top: 38px;z-index:99;}
+.navigation-menu ul.menu li:hover ul.level1{display: block;}
+.navigation-menu ul.menu ul.level1 li{position: relative;border-bottom: 1px #176EC9 solid;}
+.navigation-menu ul.menu ul.level1 li a{color: #a7c6dd;font-weight: bold;color: #fff;padding: 0px 6px;display: block;text-shadow: 0 1px 0 #5d370d;white-space: nowrap;line-height: 30px;}
+.navigation-menu ul.menu ul.level1 li a:hover{background: #176EC9;}
+.navigation-menu ul.menu ul.level1 ul.level2{position: absolute;display: none;background: #176EC9;left: 210px;width: 210px;top: 0;}
+.navigation-menu ul.menu ul.level1 li:hover ul.level2{display: block;}
+.navigation-menu ul.menu ul.level1 ul.level2 li a{color: #a7c6dd;font-weight: bold;border-right: 1px solid #156AC3;color: #fff;padding: 0px 6px;display: block;text-shadow: 0 1px 0 #5d370d;white-space: nowrap;line-height: 30px;}
+/*END-CSS:MENU NAVIGATION
+==================================================================================================================*/
+
+
+/*BEGIN-CSS:HEADER CONTENT
+==================================================================================================================*/
+#FlashBanner {
+    overflow: hidden;
+}
+#LogoContainer {
+    padding-left: 27px;
+    white-space: nowrap;
+    width: 220px;
+    padding-top: 10px;
+}
+#LogoContainer img {
+    width: 100%;
+}
+.header-content #Logo h1 {
+    overflow: hidden;
+}
+.header-content {
+    background: url("Images01/banner.gif") no-repeat scroll 0 0 #f1f1f1;
+    height: 283px;
+}
+.header-content #Logo h1 a {
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 32px;
+    font-weight: bold;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.header-content #Logo h1 a span {
+    display: block;
+    font-size: 12px;
+    padding-left: 50px;
+}
+/*END-CSS:HEADER CONTENT
+==================================================================================================================*/
+
+/*BEGIN-CSS:SLIDESHOW
+==================================================================================================================*/
+
+/*END-CSS:SLIDESHOW
+==================================================================================================================*/
+
+
+
+
+

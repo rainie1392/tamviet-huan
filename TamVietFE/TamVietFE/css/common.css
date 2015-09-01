@@ -1,0 +1,105 @@
+@charset "utf-8";
+@font-face {
+    font-family: UVNMuaThu;
+    src: url(font/UVNMuaThu.ttf);
+}
+@font-face {
+    font-family: Bambola;
+    src: url(font/iCielBambola.ttf);
+}
+@font-face {
+    font-family: iCBambola;
+    src: url(font/iCielBambola.otf);
+}
+@font-face{
+	font-family: Roboto;
+	src:url(font/Roboto-Regular.ttf);
+}
+@font-face{
+	font-family: Open san;
+	src:url(font/OpenSans-Regular.ttf);
+}
+@font-face{
+	font-family: UVNBaiSau;
+	src:url(font/UVNBaiSau.ttf);
+}
+@font-face{
+	font-family: UVNBaiSauR;
+	src:url(font/UVNBaiSau_R.ttf);
+}
+@font-face{
+	font-family: Cour;
+	src:url(font/cour.ttf);
+}
+@font-face{
+	font-family: Courbd;
+	src:url(font/courbd.ttf);
+}
+@font-face{
+	font-family: Couri;
+	src:url(font/couri.ttf);
+}
+@font-face{
+	font-family: Courbi;
+	src:url(font/courbi.ttf);
+}
+@font-face{
+	font-family: VUNIVER;
+	src:url(font/VUNIVER.TTF);
+}
+@font-face{
+	font-family: Avantg;
+	src:url(font/avantg.ttf);
+}
+@font-face{
+	font-family: VTNfap;
+	src:url(font/Vntfap01.ttf);
+}
+@font-face{
+	font-family: VNIthufap;
+	src:url(font/vnithufap.ttf);
+}
+@font-face{
+	font-family: UVNHuongQue;
+	src:url(font/UVNHuongQue_R.TTF);
+}
+@font-face{
+	font-family: HL-thufap;
+	src:url(font/HL-thufap1-Unicode.ttf);
+}
+
+/*BEGIN-CSS:clear
+==================================================================================================================*/
+.fl {float:left;}
+.fr {float:right;}
+.clear{clear:both;}
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.clearfix:before {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.opacity {opacity: 0;}
+/*END-CSS:clear
+==================================================================================================================*/
+
+/*BEGIN-CSS:verify-password
+==================================================================================================================*/
+.verify-password {margin: 10px 0 30px;text-align: center;}
+.verify-password h1 {color: #555;font-size: 28px;}
+.verify-password h2 {color: #666;font-size: 20px;}
+.verify-password span.blue {color: #0071ba;}
+.verify-password span.red {color: #d23e22;}
+/*END-CSS:verify-password
+==================================================================================================================*/
+
+/*BEGIN-CSS:notification
+==================================================================================================================*/
+.notification{border: 1px #fff solid;display: block;margin-bottom: 15px;margin-top: 5px;overflow: hidden;padding: 9px 0px 4px 0px;position: relative;z-index: 1;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;}
+.notification .close{display: block;width: 11px;height: 11px;background: url(Images/ico_close_off.png) no-repeat top left ;text-indent: -9999px;position: absolute;top:3px;right: 3px;}
+.notification p{padding: 0px 0px 4px 40px;}
+.notice-sucess{background:url(Images/ico_success.png) no-repeat 2px 0px #dffad3;border-color: #72cb67;}
+.notice-error{background:url(Images/ico_error.png) no-repeat 2px 0px #fae2e3;border-color: #ec9b9b;}
+.notice-attention{background:url(Images/ico_attention.png) no-repeat 2px 0px #fffac6;border-color: #d3c200;}
+.notice-info{background:url(Images/ico_info.png) no-repeat 2px 0px #dde9f7;border-color: #50b0ec;}
+/*END-CSS:notification
+==================================================================================================================*/
+
+#loading-mask {color:#d85909;font-size:1.1em;font-weight:bold;text-align:center;opacity:0.80;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; /* IE8 */z-index:500;}
+#loading-mask .loader {position:fixed;top:45%;left:50%;width:150px;margin-left:-105px;padding:15px 30px;background:#fff4e9;border:2px solid #f1af73;color:#d85909;font-weight:bold;text-align:center;z-index:1000;}

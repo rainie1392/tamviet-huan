@@ -1,0 +1,286 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="_FE.master.cs" Inherits="TamVietFE.Src._FE" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="/css/common.css" rel="stylesheet" type="text/css" />
+    <%--<link href="/css/jquery-ui.css" rel="stylesheet" type="text/css" />--%>
+    <link href="/css/header.css" rel="stylesheet" type="text/css" />
+    <link href="/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="/css/footer.css" rel="stylesheet" type="text/css" />
+    <link href="/css/jquery.bxslider.css" rel="stylesheet" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="/js/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.bxslider').bxSlider({
+                auto: true,
+            });
+
+            getWeather();
+
+            function getWeather() {
+                var destination = $('#we_zone option:selected').val();
+                $.ajax({
+                    url: "/Src/Ajax/AjaxWeather.aspx",
+                    type: "Get",
+                    timeout: 15000,
+                    data: { id: destination },
+                    success: function (data) {
+                        $("#htmlWeather").empty();
+                        $('#htmlWeather').append(data);
+                    }
+                });
+            }
+
+            $('#we_zone').change(function () {
+                getWeather();
+            });
+
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper clearfix">
+            <div class="header">
+                <div class="navigation-menu cleafix">
+                    <ul class="menu">
+                        <li class="level0"><a class="" href="http://runecom13.webonline.vn/trang-chu.html"><span>TRANG CHỦ</span></a></li>
+                        <li class="level0"><a class="" href="http://runecom13.webonline.vn/gioi-thieu.html"><span>GIỚI THIỆU</span></a></li>
+                        <li class="level0"><a class="" href="http://runecom13.webonline.vn/san-pham.html"><span>DỊCH VỤ</span></a></li>
+                        <li class="level0"><a class="" href="http://runecom13.webonline.vn/tin-tuc.html"><span>TIN TỨC</span></a></li>
+                        <li class="level0"><a class="" href="http://runecom13.webonline.vn/content/mua-tra-gop.html"><span>VIDEO</span></a></li>
+                        <li class="level0"><a class="" href="http://runecom13.webonline.vn/content/bao-hanh.html"><span>TUYỂN DỤNG</span></a></li>
+                        <li class="level0"><a class="" href="http://runecom13.webonline.vn/content/bang-gia.html"><span>THƯ VIỆN ẢNH</span></a></li>
+                        <li class="level0"><a class="" href="http://runecom13.webonline.vn/lien-he.html"><span>LIÊN HỆ</span></a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <ul class="bxslider">
+                <li>
+                    <img src="/Images/slider1.jpg" width="990" height="300" alt="" /></li>
+                <li>
+                    <img src="/Images/slider2.jpg" width="990" height="300" alt="" /></li>
+                <li>
+                    <img src="/Images/slider3.jpg" width="990" height="300" alt="" /></li>
+                <li>
+                    <img src="/Images/slider4.jpg" width="990" height="300" alt="" /></li>
+            </ul>
+        </div>
+
+        <div class="wrapper clearfix" style="margin-top: 0px;">
+            <div class="main">
+                <div class="bottom_slideshow clearfix">
+                </div>
+                <div class="left_col3">
+
+                    <div class="DefaultModule cate-menu">
+                        <div class="cate-menu-title">
+                            <span>Danh mục sản phẩm</span>
+                        </div>
+                        <div class="defaultContent cate-menu-content">
+                            <ul>
+                                <li class="level0"><a href="http://runecom13.webonline.vn/san-pham/xe-du-lich-xe-tai-da-qua-su-dung-1681">Máy xét nghiệm sinh hóa</a>
+                                    <ul>
+                                        <li class="level1"><a href="http://runecom13.webonline.vn/san-pham/toyota-2872">Máy xét nghiệm sinh hóa tự động</a></li>
+                                        <li class="level1"><a href="http://runecom13.webonline.vn/san-pham/ford-3164">Mấy xét nghiệm sinh hóa bán tự động</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="level0"><a href="http://runecom13.webonline.vn/san-pham/xe-tai-1707">Máy phân tích huyết học</a>
+                                </li>
+                                <li class="level0"><a href="http://runecom13.webonline.vn/san-pham/mat-hang-khac-3321">Máy xét nghiệm miễn dịch</a>
+                                </li>
+                                <li class="level0"><a href="http://runecom13.webonline.vn/san-pham/mat-hang-khac-3321">Máy xét nghiệm đông máu</a>
+                                </li>
+                                <li class="level0"><a href="http://runecom13.webonline.vn/san-pham/mat-hang-khac-3321">Máy xét nghiệm điện giải</a>
+                                </li>
+                                <li class="level0"><a href="http://runecom13.webonline.vn/san-pham/mat-hang-khac-3321">Máy xét nghiệm nước tiểu</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="defaultFooter cate-menu-footer">
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box-weather">
+                        <div class="weather-title">
+                            <span>Thời tiết</span>
+                        </div>
+                        <div class="weather-content clearfix">
+                            <div class="weather-area">
+                                <span>Chọn địa điểm</span>
+                                <select name="we_zone" id="we_zone">
+                                    <option value="1252431">Hồ Chí Minh</option>
+                                    <option value="12800712">Hà Nội</option>
+                                    <option value="1252376">Đà Nẵng</option>
+                                    <option value="1252438">Huế</option>
+                                    <option value="1252351">Cần Thơ</option>
+                                    <option value="1252662">Vinh</option>
+                                    <option value="1236690">Hải Phòng</option>
+                                    <option value="1229284">Bắc Giang</option>
+                                    <option value="1232334">Biên Hoà</option>
+                                    <option value="1252672">Bà Rịa Vũng Tàu</option>
+                                    <option value="1252537">Phan Thiết</option>
+                                    <option value="12502425">Côn Đảo</option>
+                                    <option value="1252353">Cao Bằng</option>
+                                    <option value="1244351">Phú Quốc</option>
+                                    <option value="1252512">Nam Định</option>
+                                    <option value="1252661">Việt Trì</option>
+                                    <option value="12522952">Sông Cầu</option>
+                                    <option value="12522965">Tuy Hoà</option>
+                                    <option value="1252392">Quảng Bình</option>
+                                    <option value="1252608">Thanh Hoá</option>
+                                    <option value="1252498">Mỹ Tho</option>
+                                </select>
+                            </div>
+                            <div class="date">
+                                <h3>Thời tiết hiện tại
+                                    <asp:Literal runat="server" ID="litDayOfWeek"></asp:Literal>
+                                    ngày
+                                    <asp:Literal runat="server" ID="litToday"></asp:Literal></h3>
+                            </div>
+                            <div id="htmlWeather">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box-exchange">
+                        <div class="exchange-title">
+                            <span>Tỷ giá ngoại tệ</span>
+                        </div>
+                        <div class="exchange-content">
+
+                            <table class="ts-table">
+                                <tbody>
+                                    <tr class="ts-title">
+                                        <td style="text-align: center;">Mã
+                                        </td>
+                                        <td style="text-align: center;">Mua TM
+                                        </td>
+                                        <td style="text-align: center;">Mua CK
+                                        </td>
+                                        <td style="text-align: center;">Bán ra
+                                        </td>
+                                    </tr>
+                                    <asp:Literal runat="server" ID="litCurrencyDetail"></asp:Literal>
+                                </tbody>
+                            </table>
+                            <span class="unit">Đơn vị: VNĐ</span>
+
+                            <div class="source">
+                                <span>Nguồn: </span><a href="http://vietcombank.com.vn/" target="_blank">
+                                    <img src="/Images/Logo-vietcombank.png" /></a>
+                            </div>
+                            <div class="date">
+                                Cập nhật lúc: <asp:Literal runat="server" ID="litUpdatedCurrencyTime"></asp:Literal>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="center_col3">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                </div>
+                <div class="right_col3 clearfix">
+
+                    <div class="box-support-online">
+                        <div class="support-online-title">
+                            <span>Hỗ trợ trực tuyến</span>
+                        </div>
+                        <div class="support-online-content">
+                            <p style="margin: 5px 0px;">
+                                <a href="skype:flynow_3?chat">
+                                    <img src="/Images/skype-icon.png" alt="" width="30" height="30" style="float: left; margin-left: 20px;" />
+                                    <span style="float: left; padding-top: 7px; font-size: 14px; margin-left: 15px;">Ms Phuong</span></a>
+                            </p>
+                            <p style="clear: both">
+                                <a href="ymsgr:sendim?flynow_hn2">
+                                    <img src="/Images/yahoo-icon.png" alt="" width="30" height="30" style="float: left; margin-left: 20px; padding-top: 3px;" />
+                                    <span style="float: left; padding-top: 7px; font-size: 14px; margin-left: 15px;">Ms Phuong</span></a>
+                            </p>
+                            <p style="clear: both; font-size: 14px; font-weight: bold; margin-left: 10px;">Tel &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span style="color: #2C81D9; font-size: 17px;">04.626.00.225</span></p>
+                            <p style="clear: both; font-size: 14px; font-weight: bold; margin-left: 10px;">Hotline : <span style="color: #2C81D9; font-size: 17px;">0987.515.002</span></p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="above_footer clearfix">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper clearfix">
+            <div class="footer clearfix">
+
+                <div class="Footer">
+                    <div class="wrapper">
+                        <div class="footer-content">
+                            <ul class="clearfix">
+                                <li>
+                                    <h3>Về chúng tôi</h3>
+                                    <ul>
+                                        <li><a href="http://runecom13.webonline.vn/content/tuyen-dung.html">Tuyển dụng
+                                        </a></li>
+                                        <li><a href="http://runecom13.webonline.vn/lien-he.html">Liên hệ
+                                        </a></li>
+                                        <li><a href="http://runecom13.webonline.vn/lien-he.html">Hướng dẫn mua hàng
+                                        </a></li>
+                                        <li><a href="http://runecom13.webonline.vn/content/tai-khoan-giao-dich.html">Tài khoản giao dịch
+                                        </a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h3>Kết nối với chúng tôi</h3>
+                                    <ul class="clearfix">
+                                        <li class="hotline"><span>Hotline: 0908770095</span></li>
+                                        <li class="email"><span>Email: demo13@webonline.vn</span></li>
+                                        <li class="email"><span>Địa chỉ: 5/12A Quang Trung, P.14, Q.Gò Vấp, Tp.Hồ Chí Minh</span></li>
+                                    </ul>
+                                    <div class="icon-footer">
+                                        <!-- AddThis Button BEGIN -->
+                                        <div class="addthis_toolbox addthis_default_style">
+
+                                            <a href="#" style="display: inline-block;" class="addthis_counter addthis_pill_style "><a class="atc_s addthis_button_compact"><span></span></a><a href="#" title="Thêm..." target="_blank" class="addthis_button_expanded"></a></a>
+                                            <div class="atclear"></div>
+                                        </div>
+                                        <script type="text/javascript" src="abc/addthis_widget.js"></script>
+                                        <!-- AddThis Button END -->
+                                    </div>
+                                </li>
+                                <li>
+                                    <div fb-iframe-plugin-query="app_id=317495925099540&amp;color_scheme=dark&amp;container_width=0&amp;header=false&amp;height=190&amp;locale=en_US&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false&amp;width=289" fb-xfbml-state="rendered" class="fb-like-box fb_iframe_widget" data-href="" data-width="289" data-height="190" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false">
+                                        <span style="vertical-align: bottom; width: 289px; height: 18px;">
+                                            <iframe class="" src="abc/like_box.htm" style="border: medium none; visibility: visible; width: 289px; height: 18px;" title="fb:like_box Facebook Social Plugin" scrolling="no" allowfullscreen="true" allowtransparency="true" name="f37d5b6ed7c76d4" frameborder="0" height="190px" width="289px"></iframe>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cpyright">
+                            <p style="text-align: center;">
+                                <span>2015 © VẬN HÀNH BỞI CÔNG TY TNHH THIẾT BỊ TÂM VIỆT . PHONE:  (04) 626 00 225,
+                    HOTLINE: 0987.515.002 </span>
+                            </p>
+                        </div>
+                        <div class="Clear">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+</body>
+</html>

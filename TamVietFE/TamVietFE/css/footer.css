@@ -1,0 +1,52 @@
+
+.footer{}
+.above_footer{}
+/*=======================================end layout===================================*/
+
+
+.footer-content {
+    background: #2c81d9;
+    font-size: 12px;
+    padding: 20px 0 5px 50px;
+}
+.footer-content .icon-footer {
+    padding-top: 10px;
+}
+.footer-content ul li h3 {
+    color: #e7e7e7;
+    font-size: 17px;
+    font-weight: 700;
+}
+.footer-content ul li {
+    color: #dfdfdf;
+    float: left;
+    width: 300px;
+}
+.footer-content ul li a {
+    color: #dfdfdf;
+}
+.footer-content ul li a:hover {
+    color: #f0f0f0;
+    text-decoration: underline;
+}
+.cpyright {
+    background: none repeat scroll 0 0 #333;
+    height: 40px;
+}
+.cpyright p {
+    color: #fff;
+    line-height: 40px;
+}
+.advanced {position: relative;}
+.advanced ul{background: #fff;position: relative;height:120px;}
+.advanced ul > li{float: left;width: 146px;margin:10px;height:100px;overflow:hidden;}
+.advanced ul > li img{height: 100%;filter: gray;-webkit-filter: grayscale(100%);filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");}
+.advanced ul > li:hover img{-webkit-filter: grayscale(0);-moz-filter: grayscale(0);filter: grayscale(0);filter:none;}
+
+.advanced .controls .prev,
+.advanced .controls .next{position: absolute;width: 14px;height: 35px;top: 50%;margin-top: -16px;text-indent: -999em;transition:all 0.3s ease-in-out;}
+.advanced .controls .prev{left: -21px;background: url(Images02/arrow-left.png)no-repeat;background-size:100%; }
+.advanced .controls .next{right: -21px;background: url(Images02/arrow-right.png)no-repeat;background-size:100%;}
+
+.advanced .controls .prev:hover,
+.advanced .controls .next:hover{opacity: 0.7;}
