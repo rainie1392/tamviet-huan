@@ -1,0 +1,5 @@
+D:\GitHub\tamviet-huan\TamVietFE\TamVietBE\bin\TamVietBE.dll
+D:\GitHub\tamviet-huan\TamVietFE\TamVietBE\bin\TamVietBE.pdb
+D:\GitHub\tamviet-huan\TamVietFE\TamVietBE\obj\Debug\TamVietBE.csprojResolveAssemblyReference.cache
+D:\GitHub\tamviet-huan\TamVietFE\TamVietBE\obj\Debug\TamVietBE.dll
+D:\GitHub\tamviet-huan\TamVietFE\TamVietBE\obj\Debug\TamVietBE.pdb
