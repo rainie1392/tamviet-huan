@@ -13,48 +13,12 @@ namespace TamVietBE.Src {
     public partial class CategoryManager {
         
         /// <summary>
-        /// txtNewCatName control.
+        /// dtgCategory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNewCatName;
-        
-        /// <summary>
-        /// chkIsSub control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkIsSub;
-        
-        /// <summary>
-        /// ddlListCat control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlListCat;
-        
-        /// <summary>
-        /// btnAddNew control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btnAddNew;
-        
-        /// <summary>
-        /// lvCategory control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView lvCategory;
+        protected global::System.Web.UI.WebControls.DataGrid dtgCategory;
     }
 }

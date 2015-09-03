@@ -79,6 +79,7 @@
     </div><!--leftmenu-->
         
     <div class="centercontent">
+        <asp:Literal Text="" ID="litNotify" runat="server" />
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>

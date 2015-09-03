@@ -270,6 +270,9 @@
     <Content Include="Src\HomePage.aspx" />
     <Content Include="Src\ProductManager.aspx" />
     <Content Include="Src\Template\LoginInfo.html" />
+    <Content Include="Src\Template\Notify\alert.html" />
+    <Content Include="Src\Template\Notify\error.html" />
+    <Content Include="Src\Template\Notify\success.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -281,6 +284,9 @@
     <Compile Include="Src\CategoryManager.aspx.designer.cs">
       <DependentUpon>CategoryManager.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Src\Helper\DBHelper.cs" />
+    <Compile Include="Src\Helper\Method.cs" />
+    <Compile Include="Src\Helper\Notify.cs" />
     <Compile Include="Src\HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

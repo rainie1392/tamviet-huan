@@ -3,77 +3,60 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="pageheader notab">
-            <h2 class="pagetitle">Quản lý thông tin về sản phẩm</h2>
-            <span class="pagedesc">This is a sample description of a page</span>
+            <h2 class="pagetitle">Quản lý thông tin về các sản phẩm</h2>
+            <span class="pagedesc"></span>
             
         </div><!--pageheader-->
     <div id="contentwrapper" class="contentwrapper lineheight21">
         <div class="contenttitle2">
-            <h3>Category Manager</h3>
+            <h3>Product Manager</h3>
         </div>
-        <table cellpadding="0" cellspacing="0" border="0" class="stdtable">
-                    <colgroup>
-                        <col class="con0" />
-                        <col class="con1" />
-                        <col class="con0" />
-                        <col class="con1" />
-                        <col class="con0" />
-                    </colgroup>
-                    <thead>
-                        <tr>
-                            <th class="head0">Rendering engine</th>
-                            <th class="head1">Browser</th>
-                            <th class="head0">Platform(s)</th>
-                            <th class="head1">Engine version</th>
-                            <th class="head0">CSS grade</th>
-                        </tr>
-                    </thead>
-                    <tfoot>
-                        <tr>
-                            <th class="head0">Rendering engine</th>
-                            <th class="head1">Browser</th>
-                            <th class="head0">Platform(s)</th>
-                            <th class="head1">Engine version</th>
-                            <th class="head0">CSS grade</th>
-                        </tr>
-                    </tfoot>
-                    <tbody>
-                        <tr>
-                            <td>Trident</td>
-                            <td>Internet Explorer 4.0</td>
-                            <td>Win 95+</td>
-                            <td class="center">4</td>
-                            <td class="center">X</td>
-                        </tr>
-                        <tr>
-                            <td>Trident</td>
-                            <td>Internet Explorer 5.0</td>
-                            <td>Win 95+</td>
-                            <td class="center">5</td>
-                            <td class="center">C</td>
-                        </tr>
-                        <tr>
-                            <td>Trident</td>
-                            <td>Internet  Explorer 5.5</td>
-                            <td>Win 95+</td>
-                            <td class="center">5.5</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr>
-                            <td>Trident</td>
-                            <td>Internet Explorer 6</td>
-                            <td>Win 98+</td>
-                            <td class="center">6</td>
-                            <td class="center">A</td>
-                        </tr>
-                        <tr>
-                            <td>Trident</td>
-                            <td>Internet Explorer 7</td>
-                            <td>Win XP SP2+</td>
-                            <td class="center">7</td>
-                            <td class="center">A</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <br />
+        <%--<button class="stdbtn btn_orange">Thêm mới sản phẩm</button>--%>
+        <asp:Button runat="server" ID="btnAddNew" CssClass="stdbtn btn_orange" Text="Thêm mới sản phẩm"/>
+        <br />
+        <br />
+        <asp:DataGrid runat="server" AutoGenerateColumns="false" ID="dtgProduct" CssClass="grd-stdtable" PageSize="15" ShowHeader="true"
+            OnItemDataBound="dtgProduct_ItemDataBound" OnItemCommand="dtgProduct_ItemCommand" OnPageIndexChanged="dtgProduct_PageIndexChanged">
+            <Columns>
+                <asp:TemplateColumn Visible="false">
+                    <ItemTemplate>
+                        <asp:Label runat="server" ID="lblId" Visible="false" Text='<%#Eval("Id") %>'></asp:Label>
+                    </ItemTemplate>
+                </asp:TemplateColumn>
+                <asp:TemplateColumn>
+                    <HeaderTemplate>Tên sản phẩm</HeaderTemplate>
+                    <ItemTemplate>
+                        <asp:Label runat="server" ID="lblName" Text='<%#Eval("Name") %>'></asp:Label>
+                    </ItemTemplate>
+                </asp:TemplateColumn>
+                <asp:TemplateColumn>
+                    <HeaderTemplate>Danh mục</HeaderTemplate>
+                    <ItemTemplate>
+                        <asp:Label runat="server" ID="lblCategory" Text='<%#Eval("CatName") %>'></asp:Label>
+                    </ItemTemplate>
+                </asp:TemplateColumn>
+                <asp:TemplateColumn>
+                    <HeaderTemplate>Active</HeaderTemplate>
+                    <ItemTemplate>
+                        <asp:CheckBox runat="server" Enabled="false" Checked='<%#(bool)Eval("Active") %>'/>
+                    </ItemTemplate>
+                </asp:TemplateColumn>
+                <asp:TemplateColumn>
+                    <HeaderTemplate>Edit</HeaderTemplate>
+                    <ItemTemplate>
+                        <asp:HyperLink runat="server" CssClass="underline-blue" ID="lnkEditProduct"></asp:HyperLink>
+                    </ItemTemplate>
+                </asp:TemplateColumn>
+                <asp:TemplateColumn>
+                    <HeaderTemplate>Amendment</HeaderTemplate>
+                    <ItemTemplate>
+                        <asp:ImageButton CssClass="button-dg" ID="btnDelete" runat="server"
+                        CommandName="cmdDelete" ImageUrl="~/Images/Event/delete.png" />
+                    </ItemTemplate>
+                </asp:TemplateColumn>
+            </Columns>
+            <PagerStyle Mode="NumericPages" CssClass="pager-grid" />
+        </asp:DataGrid>
     </div>
 </asp:Content>
