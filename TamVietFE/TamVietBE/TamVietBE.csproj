@@ -267,6 +267,7 @@
     <Content Include="js\plugins\tinymce\jquery.tinymce.js" />
     <Content Include="js\plugins\ui.spinner.min.js" />
     <Content Include="Src\CategoryManager.aspx" />
+    <Content Include="Src\EditProduct.aspx" />
     <Content Include="Src\HomePage.aspx" />
     <Content Include="Src\ProductManager.aspx" />
     <Content Include="Src\Template\LoginInfo.html" />
@@ -283,6 +284,13 @@
     </Compile>
     <Compile Include="Src\CategoryManager.aspx.designer.cs">
       <DependentUpon>CategoryManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Src\EditProduct.aspx.cs">
+      <DependentUpon>EditProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Src\EditProduct.aspx.designer.cs">
+      <DependentUpon>EditProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="Src\Helper\DBHelper.cs" />
     <Compile Include="Src\Helper\Method.cs" />
@@ -398,6 +406,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="images\product\" />
     <Folder Include="images\thumb\small\" />
     <Folder Include="images\thumb\xsmall\" />
     <Folder Include="Src\UserControl\" />
