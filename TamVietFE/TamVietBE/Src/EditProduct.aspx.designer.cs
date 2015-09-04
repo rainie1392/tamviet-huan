@@ -112,6 +112,24 @@ namespace TamVietBE.Src {
         protected global::System.Web.UI.WebControls.TextBox txtPrice;
         
         /// <summary>
+        /// lnkImages control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink lnkImages;
+        
+        /// <summary>
+        /// imgProduct control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imgProduct;
+        
+        /// <summary>
         /// fileUpload control.
         /// </summary>
         /// <remarks>
@@ -130,13 +148,13 @@ namespace TamVietBE.Src {
         protected global::System.Web.UI.WebControls.CheckBox chkActive;
         
         /// <summary>
-        /// TextBox3 control.
+        /// txtContent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::CKEditor.NET.CKEditorControl txtContent;
         
         /// <summary>
         /// btnUpdate control.

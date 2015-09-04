@@ -116,7 +116,7 @@ namespace TamVietBE.Src
             }
             catch
             {
-                Notify.ShowAdminMessageSuccess("Thêm mới thành công", this.Page);
+                Notify.ShowAdminMessageError("Lỗi", this.Page);
                 LoadGrid();
                 return;
             }

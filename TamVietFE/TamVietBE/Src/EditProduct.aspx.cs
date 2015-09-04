@@ -42,6 +42,10 @@ namespace TamVietBE.Src
                         txtPrice.Text = row["Price"] == DBNull.Value ? "" : row["Price"].ToString();
                         chkActive.Checked = (bool)row["Active"];
                         hidValue.Value = row["Images"] == DBNull.Value ? "" : row["Images"].ToString();
+                        txtContent.Text = row["SpecificDetail"] == DBNull.Value ? "" : row["SpecificDetail"].ToString();
+                        lnkImages.NavigateUrl = row["Images"] == DBNull.Value ? "" : row["Images"].ToString();
+                        lnkImages.Attributes.Add("data-lightbox","image-"+id);
+                        imgProduct.ImageUrl = row["Images"] == DBNull.Value ? "" : row["Images"].ToString();
                     }
                     else
                     {
@@ -70,6 +74,7 @@ namespace TamVietBE.Src
                 string humidity = txtHumidity.Text;
                 string price = txtPrice.Text;
                 bool active = chkActive.Checked;
+                string content = txtContent.Text;
                 string image = "";
                 if (fileUpload.HasFile)
                 {
@@ -92,11 +97,13 @@ namespace TamVietBE.Src
                 listPar.Add(new SqlParameter("@Price", price));
                 listPar.Add(new SqlParameter("@Active", active));
                 listPar.Add(new SqlParameter("@Id", Request["id"]));
+                listPar.Add(new SqlParameter("@SpecificDetail", content));
                 if(!String.IsNullOrEmpty(image))
                     listPar.Add(new SqlParameter("@Images", image));
 
                 DBHelper.ExecuteNonQuery("sp_Product_Update", listPar);
                 Notify.ShowAdminMessageSuccess("Cập nhật thành công", this.Page);
+                System.Threading.Thread.Sleep(3000);
                 Response.Redirect(Request.Url.ToString());
             }
             catch
@@ -104,5 +111,6 @@ namespace TamVietBE.Src
                 Notify.ShowAdminMessageError("Lỗi!!!", this.Page);
             }
         }
+
     }
 }

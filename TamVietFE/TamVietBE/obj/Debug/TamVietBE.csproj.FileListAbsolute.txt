@@ -8,3 +8,4 @@ D:\Work\GitHub\tamviet-huan\TamVietFE\TamVietBE\bin\TamVietBE.pdb
 D:\Work\GitHub\tamviet-huan\TamVietFE\TamVietBE\obj\Debug\TamVietBE.csprojResolveAssemblyReference.cache
 D:\Work\GitHub\tamviet-huan\TamVietFE\TamVietBE\obj\Debug\TamVietBE.dll
 D:\Work\GitHub\tamviet-huan\TamVietFE\TamVietBE\obj\Debug\TamVietBE.pdb
+D:\GitHub\tamviet-huan\TamVietFE\TamVietBE\bin\CKEditor.NET.dll

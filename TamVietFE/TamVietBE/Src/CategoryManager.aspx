@@ -11,7 +11,7 @@
         </div><!--pageheader-->
     <div id="contentwrapper" class="contentwrapper lineheight21">
         <div class="contenttitle2">
-            <h3>Category Manager</h3>
+            <h3>Quản lý danh mục</h3>
         </div>
         <asp:DataGrid CssClass="grd-stdtable" runat="server" ID="dtgCategory" OnItemCommand="dtgCategory_ItemCommand" AutoGenerateColumns="false" AllowPaging="true" 
             PageSize="10" ShowFooter="true" ShowHeader="true" OnItemDataBound="dtgCategory_ItemDataBound" OnPageIndexChanged="dtgCategory_PageIndexChanged">

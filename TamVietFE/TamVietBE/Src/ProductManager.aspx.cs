@@ -71,5 +71,10 @@ namespace TamVietBE.Src
                 }
             }
         }
+
+        protected void btnAddNew_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AddProduct.aspx");
+        }
     }
 }

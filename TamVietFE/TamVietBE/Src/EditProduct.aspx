@@ -1,9 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Src/_Admin.Master" AutoEventWireup="true" CodeBehind="EditProduct.aspx.cs" Inherits="TamVietBE.Src.EditProduct" %>
+<%@ Register Assembly="CKEditor.NET" Namespace="CKEditor.NET" TagPrefix="CKEditor" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="/css/lightbox.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div id="contentwrapper" class="contentwrapper lineheight21">
         <asp:HiddenField runat="server" ID="hidValue" />
+        <div class="contenttitle2">
+            <h3>Edit Product</h3>
+        </div>
         <div class="stdform stdform2">
                     	<p>
                         	<label>Tên sản phẩm</label>
@@ -50,7 +55,15 @@
                             <span class="field"><asp:TextBox runat="server" ID="txtPrice" CssClass="longinput"></asp:TextBox></span>
                         </p>
                         <p>
-                        	<label>Hình ảnh</label>
+                        	<label>Hình ảnh sản phẩm</label>
+                            <span class="field">
+                                <%--<a href="images/image-1.jpg" data-lightbox="image-1" data-title="My caption">Image #1</a>--%>
+                                <asp:HyperLink runat="server" ID="lnkImages"><asp:Image runat="server" ID="imgProduct" Width="200" /></asp:HyperLink>
+                            </span>
+                            <a href="#" class="preview"></a>
+                        </p>
+                        <p>
+                        	<label>Thay đổi hình ảnh</label>
                             <span class="field"><asp:FileUpload runat="server" ID="fileUpload" /></span>
                         </p>
                         <p>
@@ -59,7 +72,7 @@
                         </p>
                         <p>
                         	<label>Thông tin chi tiết</label>
-                            <span class="field"><asp:TextBox runat="server" ID="TextBox3" CssClass="longinput"></asp:TextBox></span>
+                            <span class="field"><ckeditor:ckeditorcontrol id="txtContent" basepath="/js/plugins/ckeditor/" runat="server" height="200"></ckeditor:ckeditorcontrol></span>
                         </p>
                         
                         <p class="stdformbutton">

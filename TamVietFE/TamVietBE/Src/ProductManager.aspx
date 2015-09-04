@@ -13,7 +13,7 @@
         </div>
         <br />
         <%--<button class="stdbtn btn_orange">Thêm mới sản phẩm</button>--%>
-        <asp:Button runat="server" ID="btnAddNew" CssClass="stdbtn btn_orange" Text="Thêm mới sản phẩm"/>
+        <asp:Button runat="server" ID="btnAddNew" OnClick="btnAddNew_Click" CssClass="stdbtn btn_orange" Text="Thêm mới sản phẩm"/>
         <br />
         <br />
         <asp:DataGrid runat="server" AutoGenerateColumns="false" ID="dtgProduct" CssClass="grd-stdtable" PageSize="15" ShowHeader="true"

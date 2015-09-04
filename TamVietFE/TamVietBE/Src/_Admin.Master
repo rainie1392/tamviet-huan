@@ -70,9 +70,9 @@
         	<li><a href="/Src/CategoryManager.aspx" class="editor">Danh mục</a></li>
             <li><a href="/Src/ProductManager.aspx" class="gallery">Sản phẩm</a></li>
             <li><a href="/Src/Support.aspx" class="elements">Thông tin hỗ trợ</a></li>
-            <li><a href="widgets.html" class="widgets">Thông tin công ty</a></li>
-            <li><a href="calendar.html" class="calendar">Video</a></li>
-            <li><a href="support.html" class="support">Đối tác</a></li>
+            <li><a href="/Src/CompanyDetail.aspx" class="widgets">Thông tin công ty</a></li>
+            <li><a href="/Src/VideoManager.aspx" class="calendar">Video</a></li>
+            <li><a href="/Src/Partner.aspx" class="support">Đối tác</a></li>
         </ul>
         <a class="togglemenu"></a>
         <br /><br />
@@ -90,5 +90,6 @@
 </div><!--bodywrapper-->
 
     </form>
+    <script src="/js/plugins/lightbox.js"></script>
 </body>
 </html>
