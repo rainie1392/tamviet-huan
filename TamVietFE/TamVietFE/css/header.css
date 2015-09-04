@@ -1,6 +1,6 @@
 /*BEGIN-CSS:LAYOUT
 ==================================================================================================================*/
-.header {background: none repeat scroll 0 0 #f1f1f1;height: auto;box-shadow: 0 3px 5px #bbb;}
+.header {background: none repeat scroll 0 0 #2C81D9 ;height: auto;box-shadow: 0 3px 5px #bbb;}
 .left_slideshow_col2{float:left;width:230px;}
 .left_slideshow_col3{float:left;width:190px;}
 
@@ -160,8 +160,8 @@
 #SearchForm .search-adv span {
     display: none;
 }
-.navigation-menu {background: #2c81d9;border: 1px solid #2c81d9;border-radius: 0 0 5px 5px;clear: both;height: 38px;margin: 0 6px;padding: 1px;width: 985px;}
-.navigation-menu ul.menu > li {position: relative;float: left;width : 123px;}
+.navigation-menu {background: #2c81d9;border: 1px solid #2c81d9;border-radius: 0 0 5px 5px;clear: both;height: 38px;padding: 1px;width: 1190px;}
+.navigation-menu ul.menu > li {position: relative;float: left;width : 148px;}
 .navigation-menu ul.menu > li > a {color: #a7c6dd;font-weight: bold;border-right: 1px solid #156AC3;color: #fff;padding: 0px 20px;display: block;text-shadow: 0 1px 0 #5d370d;white-space: nowrap;line-height: 38px;}
 .navigation-menu ul.menu > li.level0.current > a,.navigation-menu .menu > li > a:hover {color: #FFE62D;}
 .navigation-menu ul.menu ul.level1 {position: absolute;display: none;background: #2c81d9;left: 0;width: 210px;top: 38px;z-index:99;}
@@ -209,6 +209,11 @@
     display: block;
     font-size: 12px;
     padding-left: 50px;
+}
+
+.menu-title {
+    border-radius: 7px 7px 0px 0px;
+    height: 40px !important;
 }
 /*END-CSS:HEADER CONTENT
 ==================================================================================================================*/

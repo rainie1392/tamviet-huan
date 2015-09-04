@@ -52,11 +52,13 @@ namespace TamVietBE.Src
                 string id = (e.FindControl("lblId") as Label).Text;
                 string url = (e.FindControl("txtUrl") as TextBox).Text;
                 string detail = (e.FindControl("txtDetail") as TextBox).Text;
+                bool isChecked = (e.FindControl("chkActive") as CheckBox).Checked;
 
                 List<SqlParameter> pars = new List<SqlParameter>();
                 pars.Add(new SqlParameter("@Id", id));
                 pars.Add(new SqlParameter("@Url", url));
                 pars.Add(new SqlParameter("@Detail", detail));
+                pars.Add(new SqlParameter("@Active", isChecked));
                 DBHelper.ExecuteNonQuery("sp_Video_Update", pars);
 
                 Notify.ShowAdminMessageSuccess("Update thành công", this.Page);
@@ -114,6 +116,15 @@ namespace TamVietBE.Src
             }
              
             
+        }
+
+        protected void dtgVideo_ItemDataBound(object sender, DataGridItemEventArgs e)
+        {
+            if (e.Item.ItemType == ListItemType.AlternatingItem || e.Item.ItemType == ListItemType.Item)
+            {
+                ImageButton imbDelete = e.Item.FindControl("btnDelete") as ImageButton;
+                imbDelete.OnClientClick = "javascript : return confirm('Bạn có chắc muốn xóa không?')";
+            }
         }
     }
 }

@@ -12,7 +12,7 @@
             <Columns>
                 <asp:TemplateColumn Visible="false">
                     <ItemTemplate>
-                        <asp:TextBox runat="server" ID="lblId" Text='<%#Eval("Id") %>'></asp:TextBox>
+                        <asp:Label runat="server" ID="lblId" Text='<%#Eval("Id") %>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateColumn>
                 <asp:TemplateColumn>
@@ -61,6 +61,7 @@
                     </FooterTemplate>
                 </asp:TemplateColumn>
             </Columns>
+            <PagerStyle Mode="NumericPages" CssClass="pager-grid" />
         </asp:DataGrid>
     </div>
 </asp:Content>

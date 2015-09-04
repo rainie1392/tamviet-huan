@@ -14,8 +14,55 @@
     <link href="/css/jquery.bxslider.css" rel="stylesheet" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script src="/js/jquery.bxslider.min.js"></script>
+    <style>
+        .input-search {
+             background: #FFF none repeat scroll 0% 0%;
+            float: right;
+            width: 235px;
+            outline: medium none;
+            padding: 10px 20px;
+            color: #777;
+            border: 1px solid #D8D8D8;
+            border-radius: 22px;
+            transition: all 0.2s ease-out 0s;
+            box-shadow: none;
+            font-style: italic;
+        }
+        .button-search {
+            padding: 0px;
+            width: 24px;
+            height: 24px;
+            border: medium none;
+            position: absolute;
+            top: 59px;
+            right: 131px;
+            background: transparent url("/Images/icon/ico-search.png") no-repeat scroll center center;
+            cursor: pointer;
+        }
+        .header-image {
+            margin-left:308px;
+        }
+        .header-image img {
+            filter: gray; /* IE6-9 */
+            filter: grayscale(1); /* Firefox 35+ */
+            -webkit-filter: grayscale(1); 
+        }
+        .header-image img:hover {
+            filter: none;
+            -webkit-filter: grayscale(0);
+        }
+        /*.image-mail {
+            background: transparent url("/Images/icon/email.png") no-repeat scroll 0px 0px;
+        }
+        .image-phone {
+            background: transparent url("/Images/icon/phone2.png") no-repeat scroll 0px 0px;
+        }*/
+    </style>
     <script>
         $(document).ready(function () {
+
+           $()
+
             $('.bxslider').bxSlider({
                 auto: true,
             });
@@ -47,7 +94,34 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="wrapper clearfix">
+        <div style="height:28px;font-weight:bold;color:grey;background-color:#EAF2FB;">
+                <p style="margin-top:5px;float:right;margin-right:133px;">
+                    <span><img src="/Images/icon/email.png" />   flynow@gmail.com</span>
+                    <span><img src="/Images/icon/phone2.png" />   0987654321</span>
+                </p>
+            </div>
+        <div class="wrapper clearfix" style="">
+            
+            <div style="height:100px; width:1200px; margin:0 auto;">
+                <div style="float:left">
+                    <img src="/Images/tamviet.png" height="100" />
+                </div>
+                <div style="float:right;width:780px;">
+                    <p style="margin-top:25px;">
+                    <span class="header-image">
+                        <a><img src="/Images/icon/facebook.png" /></a>
+                        <a><img src="/Images/icon/google.png" /></a>
+                        <a><img src="/Images/icon/twitter.png" /></a>
+                        <a><img src="/Images/icon/youtube.png" /></a>
+
+                    </span>
+                    <span>
+                        <input type="text" placeholder="Tìm kiếm" class="input-search"/>
+                        <input class="button-search" />
+                    </span>
+                        </p>
+                </div>
+            </div>
             <div class="header">
                 <div class="navigation-menu cleafix">
                     <ul class="menu">
@@ -58,20 +132,20 @@
                         <li class="level0"><a class="" href="http://runecom13.webonline.vn/content/mua-tra-gop.html"><span>VIDEO</span></a></li>
                         <li class="level0"><a class="" href="http://runecom13.webonline.vn/content/bao-hanh.html"><span>TUYỂN DỤNG</span></a></li>
                         <li class="level0"><a class="" href="http://runecom13.webonline.vn/content/bang-gia.html"><span>THƯ VIỆN ẢNH</span></a></li>
-                        <li class="level0"><a class="" href="http://runecom13.webonline.vn/lien-he.html"><span>LIÊN HỆ</span></a></li>
+                        <li class="level0"><a class="" style="border-right:none;" href="http://runecom13.webonline.vn/lien-he.html"><span>LIÊN HỆ</span></a></li>
                     </ul>
 
                 </div>
             </div>
             <ul class="bxslider">
                 <li>
-                    <img src="/Images/slider1.jpg" width="990" height="300" alt="" /></li>
+                    <img src="/Images/slider1.jpg" width="1190" height="300" alt="" /></li>
                 <li>
-                    <img src="/Images/slider2.jpg" width="990" height="300" alt="" /></li>
+                    <img src="/Images/slider2.jpg" width="1190" height="300" alt="" /></li>
                 <li>
-                    <img src="/Images/slider3.jpg" width="990" height="300" alt="" /></li>
+                    <img src="/Images/slider3.jpg" width="1190" height="300" alt="" /></li>
                 <li>
-                    <img src="/Images/slider4.jpg" width="990" height="300" alt="" /></li>
+                    <img src="/Images/slider4.jpg" width="1190" height="300" alt="" /></li>
             </ul>
         </div>
 
@@ -82,7 +156,7 @@
                 <div class="left_col3">
 
                     <div class="DefaultModule cate-menu">
-                        <div class="cate-menu-title">
+                        <div class="menu-title cate-menu-title">
                             <span>Danh mục sản phẩm</span>
                         </div>
                         <div class="defaultContent cate-menu-content">
@@ -113,7 +187,7 @@
                     </div>
 
                     <div class="box-weather">
-                        <div class="weather-title">
+                        <div class="menu-title weather-title">
                             <span>Thời tiết</span>
                         </div>
                         <div class="weather-content clearfix">
@@ -155,7 +229,7 @@
                     </div>
 
                     <div class="box-exchange">
-                        <div class="exchange-title">
+                        <div class="menu-title exchange-title">
                             <span>Tỷ giá ngoại tệ</span>
                         </div>
                         <div class="exchange-content">
@@ -195,7 +269,7 @@
                 <div class="right_col3 clearfix">
 
                     <div class="box-support-online">
-                        <div class="support-online-title">
+                        <div class="menu-title support-online-title">
                             <span>Hỗ trợ trực tuyến</span>
                         </div>
                         <div class="support-online-content">

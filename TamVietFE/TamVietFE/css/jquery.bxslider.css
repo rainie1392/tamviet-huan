@@ -19,6 +19,7 @@
 	margin: 0 auto;
 	padding: 0;
 	*zoom: 1;
+    width:1200px;
 }
 
 .bx-wrapper img {
@@ -34,9 +35,9 @@
 	-webkit-box-shadow: 0 0 5px #ccc;
 	box-shadow: 0 0 5px #ccc;
 	border:  5px solid #fff;
-	left: -5px;
+	left: 0px;
 	background: #fff;
-	
+	width:99% !important;
 	/*fix other elements on the page moving (on Chrome)*/
 	-webkit-transform: translatez(0);
 	-moz-transform: translatez(0);

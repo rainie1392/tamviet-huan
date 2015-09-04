@@ -196,6 +196,14 @@
     <Content Include="Images\bx_loader.gif" />
     <Content Include="Images\controls.png" />
     <Content Include="Images\heroAccent.png" />
+    <Content Include="Images\icon\email.png" />
+    <Content Include="Images\icon\facebook.png" />
+    <Content Include="Images\icon\google.png" />
+    <Content Include="Images\icon\ico-contactusnow.png" />
+    <Content Include="Images\icon\ico-search.png" />
+    <Content Include="Images\icon\phone2.png" />
+    <Content Include="Images\icon\twitter.png" />
+    <Content Include="Images\icon\youtube.png" />
     <Content Include="Images\list_style3.png" />
     <Content Include="Images\Logo-vietcombank.png" />
     <Content Include="Images\orderedList0.png" />
@@ -214,6 +222,7 @@
     <Content Include="Images\slider2.jpg" />
     <Content Include="Images\slider3.jpg" />
     <Content Include="Images\slider4.jpg" />
+    <Content Include="Images\tamviet.png" />
     <Content Include="Images\wmlogo_256.png" />
     <Content Include="Images\yahoo-icon.png" />
     <Content Include="js\addthis_widget.js" />

@@ -966,6 +966,7 @@
     <Content Include="Scripts\ckeditor\themes\default\theme.js" />
     <Content Include="Src\AddProduct.aspx" />
     <Content Include="Src\CategoryManager.aspx" />
+    <Content Include="Src\CompanyDetail.aspx" />
     <Content Include="Src\EditProduct.aspx" />
     <Content Include="Src\HomePage.aspx" />
     <Content Include="Src\ProductManager.aspx" />
@@ -992,6 +993,13 @@
     </Compile>
     <Compile Include="Src\CategoryManager.aspx.designer.cs">
       <DependentUpon>CategoryManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Src\CompanyDetail.aspx.cs">
+      <DependentUpon>CompanyDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Src\CompanyDetail.aspx.designer.cs">
+      <DependentUpon>CompanyDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="Src\EditProduct.aspx.cs">
       <DependentUpon>EditProduct.aspx</DependentUpon>

@@ -9,3 +9,4 @@ D:\Work\GitHub\tamviet-huan\TamVietFE\TamVietBE\obj\Debug\TamVietBE.csprojResolv
 D:\Work\GitHub\tamviet-huan\TamVietFE\TamVietBE\obj\Debug\TamVietBE.dll
 D:\Work\GitHub\tamviet-huan\TamVietFE\TamVietBE\obj\Debug\TamVietBE.pdb
 D:\GitHub\tamviet-huan\TamVietFE\TamVietBE\bin\CKEditor.NET.dll
+D:\Work\GitHub\tamviet-huan\TamVietFE\TamVietBE\bin\CKEditor.NET.dll

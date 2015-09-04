@@ -2,7 +2,7 @@ body{font-family:Arial, Verdana, sans-serif;color: #373737;font-size: 12px;line-
 
 .wrapper {
     margin: 0 auto;
-    width: 1000px;
+    width: 1200px;
 }
 .main {
     background: none repeat scroll 0 0 #f1f1f1;
@@ -21,7 +21,7 @@ body{font-family:Arial, Verdana, sans-serif;color: #373737;font-size: 12px;line-
     float: left;
     font-size: 12px;
     margin-left: 6px;
-    width: 196px;
+    width: 240px;
 }
 .center_right_col2 {
     float: left;
@@ -32,14 +32,14 @@ body{font-family:Arial, Verdana, sans-serif;color: #373737;font-size: 12px;line-
     float: left;
     font-size: 12px;
     margin: 0 4px 0 5px;
-    width: 590px;
+    width: 680px;
 }
 .right_col3 {
     float: right;
     font-size: 12px;
     margin-right: 6px;
     padding-bottom: 10px;
-    width: 193px;
+    width: 240px;
 }
 .bottom_slideshow{width:1000px;}
 .center_left_col2{float:left;width:761px;}
@@ -336,7 +336,7 @@ body{font-family:Arial, Verdana, sans-serif;color: #373737;font-size: 12px;line-
     color: #156AC3;
 }
 .defaultContent li.level0 ul {
-    padding: 0 26px;
+    padding: 0 24px;
 }
 .defaultContent li.level0 ul li.level1 ul {
     padding: 0;

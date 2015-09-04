@@ -36,6 +36,9 @@ namespace TamVietBE.Src
                 var type = DataBinder.Eval(e.Item.DataItem, "Type").ToString();
                 DropDownList ddl = e.Item.FindControl("ddlType") as DropDownList;
                 ddl.SelectedValue = type;
+
+                ImageButton imbDelete = e.Item.FindControl("btnDelete") as ImageButton;
+                imbDelete.OnClientClick = "javascript : return confirm('Bạn có chắc muốn xóa không?')";
             }
         }
 
