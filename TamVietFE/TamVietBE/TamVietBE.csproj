@@ -192,6 +192,8 @@
     <Content Include="images\preview\preview2.png" />
     <Content Include="images\preview\preview2a.png" />
     <Content Include="images\preview\themepixels1.jpg" />
+    <Content Include="images\product\CA600.jpg" />
+    <Content Include="images\product\newpentra.jpg" />
     <Content Include="images\progress.png" />
     <Content Include="images\quote.png" />
     <Content Include="images\quote2.png" />
@@ -1152,7 +1154,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="images\product\" />
     <Folder Include="images\thumb\small\" />
     <Folder Include="images\thumb\xsmall\" />
     <Folder Include="Src\UserControl\" />

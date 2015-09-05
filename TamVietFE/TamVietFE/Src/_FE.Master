@@ -156,7 +156,7 @@
                 <div class="left_col3">
 
                     <div class="DefaultModule cate-menu">
-                        <div class="menu-title cate-menu-title">
+                        <div class="menu-title">
                             <span>Danh mục sản phẩm</span>
                         </div>
                         <div class="defaultContent cate-menu-content">
@@ -187,7 +187,7 @@
                     </div>
 
                     <div class="box-weather">
-                        <div class="menu-title weather-title">
+                        <div class="menu-title">
                             <span>Thời tiết</span>
                         </div>
                         <div class="weather-content clearfix">
@@ -229,7 +229,7 @@
                     </div>
 
                     <div class="box-exchange">
-                        <div class="menu-title exchange-title">
+                        <div class="menu-title">
                             <span>Tỷ giá ngoại tệ</span>
                         </div>
                         <div class="exchange-content">
@@ -269,7 +269,7 @@
                 <div class="right_col3 clearfix">
 
                     <div class="box-support-online">
-                        <div class="menu-title support-online-title">
+                        <div class="menu-title">
                             <span>Hỗ trợ trực tuyến</span>
                         </div>
                         <div class="support-online-content">
