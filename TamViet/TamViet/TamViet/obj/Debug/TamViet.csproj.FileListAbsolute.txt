@@ -1,0 +1,6 @@
+D:\Khanhnt'sFiles\Website\TamViet\TamViet\TamViet\bin\TamViet.dll
+D:\Khanhnt'sFiles\Website\TamViet\TamViet\TamViet\bin\TamViet.pdb
+D:\Khanhnt'sFiles\Website\TamViet\TamViet\TamViet\bin\CKEditor.NET.dll
+D:\Khanhnt'sFiles\Website\TamViet\TamViet\TamViet\obj\Debug\TamViet.csprojResolveAssemblyReference.cache
+D:\Khanhnt'sFiles\Website\TamViet\TamViet\TamViet\obj\Debug\TamViet.dll
+D:\Khanhnt'sFiles\Website\TamViet\TamViet\TamViet\obj\Debug\TamViet.pdb
