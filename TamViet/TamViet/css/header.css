@@ -244,12 +244,12 @@
         width:100%;
     }
         .detail ul li {
-            width : 24%;
-            height : 180px;
+            width : 27%;
+            height : 200px;
             border : 1px dotted #dfdfdf;
             float:left;
-            margin-left:4px;
-            margin-top:4px;
+            margin-left:30px;
+            margin-top:10px;
             position:relative;
             cursor:pointer;
         }
@@ -269,6 +269,13 @@
             text-align:center;
             color : white;
         }
+.none-click {
+    cursor:default;
+}
+.level0 :hover .submenu {
+    display:block;
+    z-index :999;
+}
 
 /*END-CSS:HEADER CONTENT
 ==================================================================================================================*/
