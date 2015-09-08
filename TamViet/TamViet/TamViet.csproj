@@ -677,11 +677,16 @@
     <Content Include="js\plusone.js" />
     <Content Include="js\vi.js" />
     <Content Include="Src\Ajax\AjaxWeather.aspx" />
+    <Content Include="Src\AllNews.aspx" />
     <Content Include="Src\BE\AddProduct.aspx" />
     <Content Include="Src\BE\CategoryManager.aspx" />
     <Content Include="Src\BE\CompanyDetail.aspx" />
     <Content Include="Src\BE\EditProduct.aspx" />
     <Content Include="Src\BE\HomePage.aspx" />
+    <Content Include="Src\BE\PageNews\AddNews.aspx" />
+    <Content Include="Src\BE\PageNews\EditNews.aspx" />
+    <Content Include="Src\BE\PageNews\ManagerNews.aspx" />
+    <Content Include="Src\BE\PageNews\usrNews.ascx" />
     <Content Include="Src\BE\ProductManager.aspx" />
     <Content Include="Src\BE\Support.aspx" />
     <Content Include="Src\BE\VideoManager.aspx" />
@@ -702,6 +707,13 @@
     </Compile>
     <Compile Include="Src\Ajax\AjaxWeather.aspx.designer.cs">
       <DependentUpon>AjaxWeather.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Src\AllNews.aspx.cs">
+      <DependentUpon>AllNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Src\AllNews.aspx.designer.cs">
+      <DependentUpon>AllNews.aspx</DependentUpon>
     </Compile>
     <Compile Include="Src\BE\AddProduct.aspx.cs">
       <DependentUpon>AddProduct.aspx</DependentUpon>
@@ -737,6 +749,34 @@
     </Compile>
     <Compile Include="Src\BE\HomePage.aspx.designer.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Src\BE\PageNews\AddNews.aspx.cs">
+      <DependentUpon>AddNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Src\BE\PageNews\AddNews.aspx.designer.cs">
+      <DependentUpon>AddNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Src\BE\PageNews\EditNews.aspx.cs">
+      <DependentUpon>EditNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Src\BE\PageNews\EditNews.aspx.designer.cs">
+      <DependentUpon>EditNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Src\BE\PageNews\ManagerNews.aspx.cs">
+      <DependentUpon>ManagerNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Src\BE\PageNews\ManagerNews.aspx.designer.cs">
+      <DependentUpon>ManagerNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Src\BE\PageNews\usrNews.ascx.cs">
+      <DependentUpon>usrNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Src\BE\PageNews\usrNews.ascx.designer.cs">
+      <DependentUpon>usrNews.ascx</DependentUpon>
     </Compile>
     <Compile Include="Src\BE\ProductManager.aspx.cs">
       <DependentUpon>ProductManager.aspx</DependentUpon>
@@ -886,6 +926,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Images\news\" />
     <Folder Include="Images\thumb\small\" />
     <Folder Include="Images\thumb\xsmall\" />
   </ItemGroup>

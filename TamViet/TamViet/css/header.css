@@ -277,6 +277,45 @@
     z-index :999;
 }
 
+.about-us {
+            width : 100%;
+            height : 200px;
+            border-bottom:1px dotted #ddd;
+            line-height:25px;
+            clear:both;
+            }
+        .product {
+            border-bottom : 3px solid #2C81D9;
+            color : #2C81D9;
+            position : relative;
+            padding-top:20px;
+        }
+.paging {
+    float:right;
+}
+    .paging li {
+        float:left;
+        background-color : white;
+        font-size:14px;
+        margin-right:5px;
+        border : 1px solid #dfdfdf;
+    }
+        .paging li a {
+            display:block;
+            width:30px;
+            height:25px; 
+            color:black;
+            text-align:center;
+            vertical-align:middle;
+        }
+        .paging li a.active {
+            background-color : #2C81D9;
+                color: white;
+        }
+            .paging li a:hover {
+                background-color : #2C81D9;
+                color: white;
+            }
 /*END-CSS:HEADER CONTENT
 ==================================================================================================================*/
 

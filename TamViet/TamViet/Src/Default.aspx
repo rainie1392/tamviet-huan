@@ -1,18 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Src/_FE.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="TamViet.Src.Default" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
-        .about-us {
-            width : 100%;
-            height : 215px;
-            border-bottom:1px dotted #ddd;
-            line-height:25px;
-            }
-        .product {
-            border-bottom : 3px solid #2C81D9;
-            color : #2C81D9;
-            position : relative;
-            padding-top:20px;
-        }
         
     </style>
 </asp:Content>

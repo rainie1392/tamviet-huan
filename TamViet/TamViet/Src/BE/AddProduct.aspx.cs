@@ -45,7 +45,7 @@ namespace TamViet.Src.BE
                 {
                     string filename = Path.GetFileName(fileUpload.PostedFile.FileName);
                     fileUpload.PostedFile.SaveAs(Server.MapPath("~/Images/product/") + filename);
-                    image = "~/images/product/" + filename;
+                    image = "~/Images/product/" + filename;
                 }
                 List<SqlParameter> listPar = new List<SqlParameter>();
                 listPar.Add(new SqlParameter("@Name", name));

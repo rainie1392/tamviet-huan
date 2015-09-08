@@ -73,6 +73,13 @@
             <li><a href="/Src/BE/CompanyDetail.aspx" class="widgets">Thông tin công ty</a></li>
             <li><a href="/Src/BE/VideoManager.aspx" class="calendar">Video</a></li>
             <li><a href="/Src/BE/Partner.aspx" class="support">Đối tác</a></li>
+            <li><a href="#manage-news" class="typo">Tin tức</a>
+                <span class="arrow"></span>
+            	<ul id="manage-news">
+               		<li><a href="/Src/BE/PageNews/ManagerNews.aspx">Quản lý tin tức</a></li>
+                    <li><a href="/Src/BE/Pagenews/AddNews.aspx">Thêm mới tin tức</a></li>
+                </ul>
+            </li>
         </ul>
         <a class="togglemenu"></a>
         <br /><br />
