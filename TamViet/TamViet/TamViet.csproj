@@ -193,6 +193,7 @@
     <Content Include="Images\Logo-vietcombank.png" />
     <Content Include="Images\medical_group.jpg" />
     <Content Include="Images\menucollapsed.png" />
+    <Content Include="Images\news\tin-tuc-1.jpg" />
     <Content Include="Images\next.png" />
     <Content Include="Images\next2.png" />
     <Content Include="Images\notifications.png" />
@@ -683,6 +684,8 @@
     <Content Include="Src\BE\CompanyDetail.aspx" />
     <Content Include="Src\BE\EditProduct.aspx" />
     <Content Include="Src\BE\HomePage.aspx" />
+    <Content Include="Src\BE\PageImages\NewsImages.aspx" />
+    <Content Include="Src\BE\PageImages\ProductImages.aspx" />
     <Content Include="Src\BE\PageNews\AddNews.aspx" />
     <Content Include="Src\BE\PageNews\EditNews.aspx" />
     <Content Include="Src\BE\PageNews\ManagerNews.aspx" />
@@ -749,6 +752,20 @@
     </Compile>
     <Compile Include="Src\BE\HomePage.aspx.designer.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Src\BE\PageImages\NewsImages.aspx.cs">
+      <DependentUpon>NewsImages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Src\BE\PageImages\NewsImages.aspx.designer.cs">
+      <DependentUpon>NewsImages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Src\BE\PageImages\ProductImages.aspx.cs">
+      <DependentUpon>ProductImages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Src\BE\PageImages\ProductImages.aspx.designer.cs">
+      <DependentUpon>ProductImages.aspx</DependentUpon>
     </Compile>
     <Compile Include="Src\BE\PageNews\AddNews.aspx.cs">
       <DependentUpon>AddNews.aspx</DependentUpon>
@@ -926,7 +943,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Images\news\" />
     <Folder Include="Images\thumb\small\" />
     <Folder Include="Images\thumb\xsmall\" />
   </ItemGroup>

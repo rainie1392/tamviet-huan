@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
@@ -16,11 +17,21 @@ namespace TamViet.Src.BE
         {
             if (!IsPostBack)
             {
+                var tableParentCat = DBHelper.GetDataTableSP("sp_Category_GetParentCategory");
                 var tableCategory = DBHelper.GetDataTableSP("GetAllCategory");
                 ddlCategory.DataSource = tableCategory;
                 ddlCategory.DataTextField = "Name";
                 ddlCategory.DataValueField = "Id";
                 ddlCategory.DataBind();
+
+                if (tableParentCat != null && tableParentCat.Rows.Count > 0)
+                {
+                    foreach (DataRow r in tableParentCat.Rows)
+                    {
+                        ddlCategory.Items.Remove(ddlCategory.Items.FindByValue(r["ParentId"].ToString()));
+                    }
+                }
+
             }
         }
 
@@ -41,11 +52,16 @@ namespace TamViet.Src.BE
                 bool active = chkActive.Checked;
                 string content = txtContent.Text;
                 string image = "";
-                if (fileUpload.HasFile)
+                if (txtImg.Text != "")
+                    image = txtImg.Text;
+                else
                 {
-                    string filename = Path.GetFileName(fileUpload.PostedFile.FileName);
-                    fileUpload.PostedFile.SaveAs(Server.MapPath("~/Images/product/") + filename);
-                    image = "~/Images/product/" + filename;
+                    if (fileUpload.HasFile)
+                    {
+                        string filename = Path.GetFileName(fileUpload.PostedFile.FileName);
+                        fileUpload.PostedFile.SaveAs(Server.MapPath("~/Images/product/") + filename);
+                        image = "~/Images/product/" + filename;
+                    }
                 }
                 List<SqlParameter> listPar = new List<SqlParameter>();
                 listPar.Add(new SqlParameter("@Name", name));

@@ -67,6 +67,15 @@ namespace TamViet.Src.BE.PageNews {
         protected global::System.Web.UI.WebControls.Panel pnlUpload;
         
         /// <summary>
+        /// litText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litText;
+        
+        /// <summary>
         /// txtImg control.
         /// </summary>
         /// <remarks>
@@ -110,5 +119,14 @@ namespace TamViet.Src.BE.PageNews {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSubmitNews;
+        
+        /// <summary>
+        /// btnEditNews control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnEditNews;
     }
 }

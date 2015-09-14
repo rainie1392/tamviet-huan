@@ -64,7 +64,7 @@
                         </p>
                         <p>
                         	<label>Thay đổi hình ảnh</label>
-                            <span class="field"><asp:FileUpload runat="server" ID="fileUpload" /></span>
+                            <span class="field">Đường dẫn <asp:TextBox runat="server" ID="txtImg" CssClass="smallinput" placeholder="VD:https://images.google.com/"></asp:TextBox>  Hoặc upload ảnh : <asp:FileUpload runat="server" ID="fileUpload" /></span>
                         </p>
                         <p>
                         	<label>Active</label>

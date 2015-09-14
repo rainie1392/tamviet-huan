@@ -10,3 +10,9 @@ D:\GitHub\tamviet-huan\TamViet\TamViet\bin\TamViet.pdb
 D:\GitHub\tamviet-huan\TamViet\TamViet\bin\CKEditor.NET.dll
 D:\GitHub\tamviet-huan\TamViet\TamViet\obj\Debug\TamViet.pdb
 D:\GitHub\tamviet-huan\TamViet\TamViet\obj\Debug\TamViet.csprojResolveAssemblyReference.cache
+D:\Work\GitHub\tamviet-huan\TamViet\TamViet\bin\TamViet.dll
+D:\Work\GitHub\tamviet-huan\TamViet\TamViet\bin\TamViet.pdb
+D:\Work\GitHub\tamviet-huan\TamViet\TamViet\bin\CKEditor.NET.dll
+D:\Work\GitHub\tamviet-huan\TamViet\TamViet\obj\Debug\TamViet.csprojResolveAssemblyReference.cache
+D:\Work\GitHub\tamviet-huan\TamViet\TamViet\obj\Debug\TamViet.dll
+D:\Work\GitHub\tamviet-huan\TamViet\TamViet\obj\Debug\TamViet.pdb

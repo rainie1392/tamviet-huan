@@ -80,6 +80,13 @@
                     <li><a href="/Src/BE/Pagenews/AddNews.aspx">Thêm mới tin tức</a></li>
                 </ul>
             </li>
+            <li><a href="#manage-images" class="table">Quản lý hình ảnh</a>
+                <span class="arrow"></span>
+            	<ul id="manage-images">
+               		<li><a href="/Src/BE/PageImages/ProductImages.aspx">Hình ảnh sản phẩm</a></li>
+                    <li><a href="/Src/BE/PageImages/NewsImages.aspx">Hình ảnh tin tức</a></li>
+                </ul>
+            </li>
         </ul>
         <a class="togglemenu"></a>
         <br /><br />

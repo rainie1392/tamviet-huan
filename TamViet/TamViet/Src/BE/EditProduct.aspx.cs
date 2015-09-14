@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
@@ -23,6 +24,9 @@ namespace TamViet.Src.BE
                     pars.Add(new SqlParameter("@Id", id));
                     var table = DBHelper.GetDataTableSP("sp_Product_GetProductById", pars);
                     var tableCategory = DBHelper.GetDataTableSP("GetAllCategory");
+
+                    var tableParentCat = DBHelper.GetDataTableSP("sp_Category_GetParentCategory");
+
                     if (table != null && table.Rows.Count > 0)
                     {
                         var row = table.Rows[0];
@@ -31,6 +35,14 @@ namespace TamViet.Src.BE
                         ddlCategory.DataTextField = "Name";
                         ddlCategory.DataValueField = "Id";
                         ddlCategory.DataBind();
+                        if (tableParentCat != null && tableParentCat.Rows.Count > 0)
+                        {
+                            foreach (DataRow r in tableParentCat.Rows)
+                            {
+                                ddlCategory.Items.Remove(ddlCategory.Items.FindByValue(r["ParentId"].ToString()));
+                            }
+                        }
+
                         ddlCategory.SelectedValue = row["CategoryId"].ToString();
                         txtManufacturer.Text = row["Manufacturer"] == DBNull.Value ? "" : row["Manufacturer"].ToString();
                         txtYear.Text = row["Year"] == DBNull.Value ? "" : row["Year"].ToString();
@@ -76,13 +88,18 @@ namespace TamViet.Src.BE
                 bool active = chkActive.Checked;
                 string content = txtContent.Text;
                 string image = "";
-                if (fileUpload.HasFile)
+                if (!String.IsNullOrEmpty(txtImg.Text))
+                    image = txtImg.Text;
+                else
                 {
-                    string filename = Path.GetFileName(fileUpload.PostedFile.FileName);
-                    fileUpload.PostedFile.SaveAs(Server.MapPath("~/Images/product/") + filename);
-                    image = "~/Images/product/" + filename;
-                    var former_image = Server.MapPath(hidValue.Value);
-                    if (System.IO.File.Exists(former_image)) { System.IO.File.Delete(former_image); }
+                    if (fileUpload.HasFile)
+                    {
+                        string filename = Path.GetFileName(fileUpload.PostedFile.FileName);
+                        fileUpload.PostedFile.SaveAs(Server.MapPath("~/Images/product/") + filename);
+                        image = "~/Images/product/" + filename;
+                        var former_image = Server.MapPath(hidValue.Value);
+                        if (System.IO.File.Exists(former_image)) { System.IO.File.Delete(former_image); }
+                    }
                 }
                 List<SqlParameter> listPar = new List<SqlParameter>();
                 listPar.Add(new SqlParameter("@Name", name));

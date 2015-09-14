@@ -24,10 +24,10 @@
                 <span class="field"><asp:Image runat="server" ID="imgNews" Height="150px" /></span>
             </p>
             </asp:Panel>
-            <asp:Panel runat="server" ID="pnlUpload" Visible="false">
+            <asp:Panel runat="server" ID="pnlUpload" Visible="true">
                 <p>
-                    <label>Hình ảnh</label>
-                    <span class="field">Đường dẫn(Link trên mạng) <asp:TextBox runat="server" ID="txtImg" CssClass="smallinput" placeholder="VD:https://images.google.com/"></asp:TextBox> Hoặc upload ảnh <asp:FileUpload runat="server" ID="fileUpload" /></span>
+                    <label><asp:Literal runat="server" ID="litText"></asp:Literal></label>
+                    <span class="field">Đường dẫn <asp:TextBox runat="server" ID="txtImg" CssClass="smallinput" placeholder="VD:https://images.google.com/"></asp:TextBox> Hoặc upload ảnh <asp:FileUpload runat="server" ID="fileUpload" /></span>
                 </p>
             </asp:Panel>
             <p>
@@ -39,6 +39,7 @@
                 <span class="field"><CKEditor:CKEditorControl runat="server" ID="txtContent" BasePath="/js/plugins/ckeditor/" Height="200px"></CKEditor:CKEditorControl></span>
             </p>
             <p class="stdformbutton">
-                <asp:Button runat="server" ID="btnSubmitNews" CssClass="submit radius2" OnClick="btnSubmitNews_Click"/>
+                <asp:Button runat="server" ID="btnSubmitNews" CssClass="submit radius2" Text="Thêm mới" OnClick="btnSubmitNews_Click"/>
+                <asp:Button runat="server" ID="btnEditNews" CssClass="submit radius2" Text="Cập nhật" OnClick="btnEditNews_Click" />
             </p>
         </div>
