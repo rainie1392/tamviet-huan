@@ -20,7 +20,7 @@ namespace TamViet.Src.BE.PageImages
 
         private void LoadData()
         {
-            DirectoryInfo d = new DirectoryInfo(Server.MapPath("~/Images/news/"));
+            DirectoryInfo d = new DirectoryInfo(Server.MapPath("/Images/news/"));
             FileInfo[] listFile = d.GetFiles("*.*", SearchOption.AllDirectories);
             litImages.DataSource = listFile;
             litImages.DataBind();
@@ -29,7 +29,7 @@ namespace TamViet.Src.BE.PageImages
         protected void litImages_ItemDataBound(object sender, ListViewItemEventArgs e)
         {
             Image img = e.Item.FindControl("img") as Image;
-            img.ImageUrl = "/Images/product/" + DataBinder.Eval(e.Item.DataItem, "Name").ToString();
+            img.ImageUrl = "/Images/news/" + DataBinder.Eval(e.Item.DataItem, "Name").ToString();
 
             Literal litFileName = e.Item.FindControl("litFileName") as Literal;
             litFileName.Text = DataBinder.Eval(e.Item.DataItem, "Name").ToString();

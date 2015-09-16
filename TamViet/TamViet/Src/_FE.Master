@@ -141,10 +141,10 @@
                              <a href="#" class="submenu" style="display:none;position:absolute;margin-top:41px;">Sơ đồ tổ chức</a>
                         </li>
                         <li class="level0"><a class="" href="/Src/DichVu.aspx"><span>DỊCH VỤ</span></a></li>
-                        <li class="level0"><a class="none-click" href="#"><span>TIN TỨC</span></a>
-                            <a href="/Src/AboutUs.aspx" class="submenu" style="display:none;position:absolute;">Tin tức công ty</a>
-                            <a href="/Src/AboutUs.aspx" class="submenu" style="display:none;position:absolute;margin-top:41px;">Tin tức y tế</a>
-                            <a href="/Src/AboutUs.aspx" class="submenu" style="display:none;position:absolute;margin-top:82px;">Kiến thức y học</a>
+                        <li class="level0"><a href="/Src/AllNews.aspx"><span>TIN TỨC</span></a>
+                            <a href="/Src/AllNews.aspx?category=1" class="submenu" style="display:none;position:absolute;">Tin tức công ty</a>
+                            <a href="/Src/AllNews.aspx?category=2" class="submenu" style="display:none;position:absolute;margin-top:41px;">Tin tức y tế</a>
+                            <a href="/Src/AllNews.aspx?category=3" class="submenu" style="display:none;position:absolute;margin-top:82px;">Kiến thức y học</a>
                         </li>
                         <li class="level0"><a class="" href="/Src/Video.aspx"><span>VIDEO</span></a></li>
                         <li class="level0"><a class="" href="/Src/Recruit.aspx"><span>TUYỂN DỤNG</span></a></li>
@@ -178,7 +178,8 @@
                         </div>
                         <div class="defaultContent cate-menu-content">
                             <ul>
-                                <li class="level0"><a href="" class="none-click">Máy xét nghiệm sinh hóa</a>
+                                <asp:Literal runat="server" ID="litCategory"></asp:Literal>
+                                <%--<li class="level0"><a href="" class="none-click">Máy xét nghiệm sinh hóa</a>
                                     <ul>
                                         <li class="level1"><a href="http://runecom13.webonline.vn/san-pham/toyota-2872">Máy xét nghiệm sinh hóa tự động</a></li>
                                         <li class="level1"><a href="http://runecom13.webonline.vn/san-pham/ford-3164">Mấy xét nghiệm sinh hóa bán tự động</a></li>
@@ -194,7 +195,7 @@
                                 <li class="level0"><a href="http://runecom13.webonline.vn/san-pham/mat-hang-khac-3321">Máy xét nghiệm điện giải</a>
                                 </li>
                                 <li class="level0"><a href="http://runecom13.webonline.vn/san-pham/mat-hang-khac-3321">Máy xét nghiệm nước tiểu</a>
-                                </li>
+                                </li>--%>
                             </ul>
                         </div>
                         <div class="defaultFooter cate-menu-footer">

@@ -193,6 +193,7 @@
     <Content Include="Images\Logo-vietcombank.png" />
     <Content Include="Images\medical_group.jpg" />
     <Content Include="Images\menucollapsed.png" />
+    <Content Include="Images\news\timthumb.php.jpg" />
     <Content Include="Images\news\tin-tuc-1.jpg" />
     <Content Include="Images\next.png" />
     <Content Include="Images\next2.png" />
@@ -694,6 +695,8 @@
     <Content Include="Src\BE\Support.aspx" />
     <Content Include="Src\BE\VideoManager.aspx" />
     <Content Include="Src\Default.aspx" />
+    <Content Include="Src\NewsDetail.aspx" />
+    <Content Include="Src\ProductDetail.aspx" />
     <Content Include="Src\Template\Currency.html" />
     <Content Include="Src\Template\LoginInfo.html" />
     <Content Include="Src\Template\Notify\alert.html" />
@@ -834,6 +837,20 @@
     <Compile Include="Src\Helper\FormatHelper.cs" />
     <Compile Include="Src\Helper\Method.cs" />
     <Compile Include="Src\Helper\Notify.cs" />
+    <Compile Include="Src\NewsDetail.aspx.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Src\NewsDetail.aspx.designer.cs">
+      <DependentUpon>NewsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Src\ProductDetail.aspx.cs">
+      <DependentUpon>ProductDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Src\ProductDetail.aspx.designer.cs">
+      <DependentUpon>ProductDetail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Src\_FE.Master.cs">
       <DependentUpon>_FE.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

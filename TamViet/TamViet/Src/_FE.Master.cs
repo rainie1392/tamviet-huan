@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -75,6 +76,54 @@ namespace TamViet.Src
 
                 #endregion
 
+
+                string totalText = "";
+                var tb = DBHelper.GetDataTableSP("GetAllCategory");
+                var tbParentCat = DBHelper.GetDataTableSP("sp_Category_GetParentCategory");
+                if (tbParentCat != null && tbParentCat.Rows.Count > 0)
+                {
+                    foreach (DataRow r in tbParentCat.Rows)
+                    {
+                        string html = "";
+                        var id = r["ParentId"].ToString();
+                        var parentText = "";
+                        var listSub = new List<DataRow>();
+                        foreach (DataRow row in tb.Rows)
+                        {
+                            if (row["Id"].ToString() == id)
+                                parentText = row["Name"].ToString();
+                            if (row["ParentId"].ToString() == id)
+                                listSub.Add(row);
+                        }
+                        html += "<li class='level0'><a href='' class='none-click'>"+parentText+"</a>"+
+                                    "<ul>";
+                        foreach (DataRow d in listSub)
+                        {
+                            html += "<li class='level1'><a href='/Src/Category.aspx?id="+d["Id"]+"'>"+d["Name"]+"</a></li>";
+                        }
+                        html += "</ul></li>";
+                        totalText += html;
+                        var listRemove = new List<DataRow>();
+                        foreach (DataRow s in tb.Rows)
+                        {
+                            if (s["Id"].ToString() == id||s["ParentId"].ToString()==id)
+                                listRemove.Add(s);
+                        }
+                        foreach (var item in listRemove)
+                        {
+                            tb.Rows.Remove(item);
+                        }
+                    }
+                }
+                foreach (DataRow c in tb.Rows)
+                {
+                    string html = "";
+                    html += "<li class='level0'><a href='/Src/Category.aspx?id="+c["Id"]+"'>"+c["Name"]+"</a>" +
+                                "</li>";
+                    totalText += html;
+                }
+
+                litCategory.Text = totalText;
             }
         }
     }

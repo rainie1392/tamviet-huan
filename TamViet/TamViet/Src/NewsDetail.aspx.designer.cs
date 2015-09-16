@@ -10,24 +10,24 @@
 namespace TamViet.Src {
     
     
-    public partial class AllNews {
+    public partial class NewsDetail {
         
         /// <summary>
-        /// ltNews control.
+        /// litTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltNews;
+        protected global::System.Web.UI.WebControls.Literal litTitle;
         
         /// <summary>
-        /// ltPagging control.
+        /// litContent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltPagging;
+        protected global::System.Web.UI.WebControls.Literal litContent;
     }
 }

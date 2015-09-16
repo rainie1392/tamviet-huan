@@ -71,8 +71,8 @@ namespace TamViet.Src.BE.PageNews
             else
             {
                 string filename = Path.GetFileName(fileUpload.PostedFile.FileName);
-                fileUpload.PostedFile.SaveAs(Server.MapPath("~/Images/news/") + filename);
-                img = "~/Images/news/" + filename;
+                fileUpload.PostedFile.SaveAs(Server.MapPath("/Images/news/") + filename);
+                img = "/Images/news/" + filename;
             }
             try
             {
@@ -112,8 +112,8 @@ namespace TamViet.Src.BE.PageNews
             else
             {
                 string filename = Path.GetFileName(fileUpload.PostedFile.FileName);
-                fileUpload.PostedFile.SaveAs(Server.MapPath("~/Images/news/") + filename);
-                img = "~/Images/news/" + filename;
+                fileUpload.PostedFile.SaveAs(Server.MapPath("/Images/news/") + filename);
+                img = "/Images/news/" + filename;
                 var former_image = Server.MapPath(imgNews.ImageUrl);
                 if (System.IO.File.Exists(former_image)) { System.IO.File.Delete(former_image); }
             }

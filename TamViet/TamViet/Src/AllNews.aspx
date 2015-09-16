@@ -1,78 +1,39 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Src/_FE.Master" AutoEventWireup="true" CodeBehind="AllNews.aspx.cs" Inherits="TamViet.Src.AllNews" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script>
+        $(document).ready(function () {
+            function getParameterByName(name) {
+                name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+                var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                    results = regex.exec(location.search);
+                return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+            }
+            $('.paging li a').click(function (e) {
+                e.preventDefault();
+                var m = getParameterByName('category');
+                var url = window.location.href;
+                if (m.length > 0) {
+                    var ref = $(this).attr('href').replace('?', ' ').trim();
+                    url = url + '&' + ref;
+                }
+                else {
+                    var ref = $(this).attr('href');
+                    url = url + ref;
+                }
+                window.location.href = url;
+            });
+        });
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="box-support-online">
         <div class="menu-title">
             <span>Tin tức</span>
         </div>
-        <div class="about-us">
-            <div style="float: left; width: 40%;">
-                <img src="/Images/medical_group.jpg" style="width: 100%; height: 190px;" />
-            </div>
-            <div style="float: left; width: 50%;">
-                <p><b>Giới thiệu về chúng tôi</b></p>
-                <div>
-                    <asp:Literal runat="server" ID="litAboutUs"></asp:Literal>
-                </div>
-                <p><span class="hyperlink" style="float: right; margin-right: 10px; margin-left: 20px;">Xem chi tiết</span></p>
-            </div>
-        </div>
-        <div class="about-us">
-            <div style="float: left; width: 40%;">
-                <img src="/Images/medical_group.jpg" style="width: 100%; height: 190px;" />
-            </div>
-            <div style="float: left; width: 50%;">
-                <p><b>Giới thiệu về chúng tôi</b></p>
-                <div>
-                    <asp:Literal runat="server" ID="Literal1"></asp:Literal>
-                </div>
-                <p><span class="hyperlink" style="float: right; margin-right: 10px; margin-left: 20px;">Xem chi tiết</span></p>
-            </div>
-        </div>
-        <div class="about-us">
-            <div style="float: left; width: 40%;">
-                <img src="/Images/medical_group.jpg" style="width: 100%; height: 190px;" />
-            </div>
-            <div style="float: left; width: 50%;">
-                <p><b>Giới thiệu về chúng tôi</b></p>
-                <div>
-                    <asp:Literal runat="server" ID="Literal2"></asp:Literal>
-                </div>
-                <p><span class="hyperlink" style="float: right; margin-right: 10px; margin-left: 20px;">Xem chi tiết</span></p>
-            </div>
-        </div>
-        <div class="about-us">
-            <div style="float: left; width: 40%;">
-                <img src="/Images/medical_group.jpg" style="width: 100%; height: 190px;" />
-            </div>
-            <div style="float: left; width: 50%;">
-                <p><b>Giới thiệu về chúng tôi</b></p>
-                <div>
-                    <asp:Literal runat="server" ID="Literal3"></asp:Literal>
-                </div>
-                <p><span class="hyperlink" style="float: right; margin-right: 10px; margin-left: 20px;">Xem chi tiết</span></p>
-            </div>
-        </div>
-        <div class="about-us">
-            <div style="float: left; width: 40%;">
-                <img src="/Images/medical_group.jpg" style="width: 100%; height: 190px;" />
-            </div>
-            <div style="float: left; width: 50%;">
-                <p><b>Giới thiệu về chúng tôi</b></p>
-                <div>
-                    <asp:Literal runat="server" ID="Literal4"></asp:Literal>
-                </div>
-                <p><span class="hyperlink" style="float: right; margin-right: 10px; margin-left: 20px;">Xem chi tiết</span></p>
-            </div>
-        </div>
+        <asp:Literal runat="server" ID="ltNews"></asp:Literal>
         <ul class="paging">
-            <li><a href="#" class="active">1</a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">1</a></li>
+            <asp:Literal runat="server" ID="ltPagging"></asp:Literal>        
         </ul>
     </div>
 </asp:Content>

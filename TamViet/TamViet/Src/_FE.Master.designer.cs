@@ -40,6 +40,15 @@ namespace TamViet.Src {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// litCategory control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litCategory;
+        
+        /// <summary>
         /// litDayOfWeek control.
         /// </summary>
         /// <remarks>

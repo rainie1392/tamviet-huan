@@ -20,7 +20,7 @@ namespace TamViet.Src.BE.PageImages
 
         private void LoadData()
         {
-            DirectoryInfo d = new DirectoryInfo(Server.MapPath("~/Images/product/"));
+            DirectoryInfo d = new DirectoryInfo(Server.MapPath("/Images/product/"));
             FileInfo[] listFile = d.GetFiles("*.*", SearchOption.AllDirectories);
             litImages.DataSource = listFile;
             litImages.DataBind();

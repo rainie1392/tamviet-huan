@@ -14,7 +14,7 @@
             <div>
                 <asp:Literal runat="server" ID="litAboutUs"></asp:Literal>
             </div>
-            <p><span class="hyperlink" style="float:right;margin-right:10px;margin-left:20px;">Xem chi tiết</span></p>
+            <p><a href="AboutUs.aspx"><span class="hyperlink" style="float:right;margin-right:10px;margin-left:20px;">Xem chi tiết</span></a></p>
         </div>
     </div>
     <div class="product">
